@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Sacramento");
 
+.reproductor {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
 #card {
   height: 500px;
   width: 800px;
@@ -14,11 +25,16 @@
 /* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
   #card {
-    width: 90%; /* Reducir el ancho para dispositivos móviles */
-    height: auto; /* Permitir que la altura se ajuste automáticamente */
-    margin: 2em auto; /* Ajustar el margen */
-    position: static; /* Cambiar la posición a estática para que no sea fija */
-    visibility: none; /* Hacer que el elemento sea visible */
+    width: 90%;
+    /* Reducir el ancho para dispositivos móviles */
+    height: auto;
+    /* Permitir que la altura se ajuste automáticamente */
+    margin: 2em auto;
+    /* Ajustar el margen */
+    position: static;
+    /* Cambiar la posición a estática para que no sea fija */
+    visibility: none;
+    /* Hacer que el elemento sea visible */
     top: 50px;
   }
 
@@ -27,8 +43,10 @@
   }
 
   #card p {
-    padding-left: 0 !important; /* Eliminar el relleno a la izquierda en dispositivos móviles */
-    padding-right: 0 !important; /* Eliminar el relleno a la derecha en dispositivos móviles */
+    padding-left: 0 !important;
+    /* Eliminar el relleno a la izquierda en dispositivos móviles */
+    padding-right: 0 !important;
+    /* Eliminar el relleno a la derecha en dispositivos móviles */
     font-size: 1.3em !important;
   }
 
@@ -50,8 +68,10 @@
 #card p {
   font-size: 1.5em;
   text-align: justify;
-  padding-left: 30px; /* Espacio en blanco a la izquierda */
-  padding-right: 30px; /* Espacio en blanco a la derecha */
+  padding-left: 30px;
+  /* Espacio en blanco a la izquierda */
+  padding-right: 30px;
+  /* Espacio en blanco a la derecha */
 }
 
 .side {
@@ -65,9 +85,12 @@
   width: 320px;
   transform: skew(10deg, 20deg);
   background: linear-gradient(90deg, #fff, #fff 40%, #ddd);
-  display: flex; /* Utiliza flexbox para centrar el corazón verticalmente */
-  justify-content: center; /* Centra horizontalmente el contenido */
-  align-items: center; /* Centra verticalmente el contenido */
+  display: flex;
+  /* Utiliza flexbox para centrar el corazón verticalmente */
+  justify-content: center;
+  /* Centra horizontalmente el contenido */
+  align-items: center;
+  /* Centra verticalmente el contenido */
   transform: skew(10deg, 20deg);
   position: relative;
   overflow: hidden;
@@ -220,6 +243,7 @@ body {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.2);
   }
@@ -240,6 +264,7 @@ body {
   }
 
   .text {
-    font-size: 1em; /* Ajuste del tamaño de fuente */
+    font-size: 1em;
+    /* Ajuste del tamaño de fuente */
   }
 }

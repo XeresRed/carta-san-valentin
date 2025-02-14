@@ -1,4 +1,10 @@
+const playMusic = () => {
+    var play = document.getElementById("audio");
+    play.play();
+}
+
 $(document).ready(function () {
+    setTimeout(playMusic, 3000);
     // Al cargar la página, ocultamos las cortinas
     $('.left-curtain').css('width', '0%');
     $('.right-curtain').css('width', '0%');
